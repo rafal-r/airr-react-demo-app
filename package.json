@@ -1,10 +1,11 @@
 {
-  "name": "new",
+  "name": "airr-react-demp-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "airr-react library demonstration app",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "airr-react": "^3.0.0",
     "react": "16.8.0",
     "react-dom": "16.8.0",
     "react-scripts": "2.0.3"
