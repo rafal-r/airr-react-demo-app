@@ -1,7 +1,7 @@
 {
   "name": "airr-react-demp-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "airr-react library demonstration app",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
