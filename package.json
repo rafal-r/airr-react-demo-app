@@ -2,6 +2,11 @@
   "name": "airr-react-demp-app",
   "version": "1.0.0",
   "description": "airr-react library demonstration app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafal-r/airr-react-demo-app"
+  },
+  "license": "MIT",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
