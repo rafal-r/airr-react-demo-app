@@ -1,16 +1,15 @@
+import "babel-polyfill";
 import React from "react";
 import ReactDOM from "react-dom";
+import "./lib/airr-react.css";
+import "./app.css";
+import App from "./App";
 
-import "./styles.css";
-
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
+//when using Cordova for mobile apps, wait for device to be ready and then render
+if (window.cordova) {
+    document.addEventListener("deviceready", function() {
+        ReactDOM.render(<App />, document.getElementById("root"));
+    });
+} else {
+    ReactDOM.render(<App />, document.getElementById("root"));
 }
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
