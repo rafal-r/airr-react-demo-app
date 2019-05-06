@@ -1,11 +1,11 @@
 import React from "react";
-import { ViewWrapper } from "airr-react";
+import { View } from "airr-react";
 import Menu from "../ui/Menu";
 import "./css/Welcome.css";
 
 export const viewName = "welcome";
 
-export default class Welcome extends ViewWrapper {
+export default class Welcome extends View {
     menuOptions = [
         {
             name: "mayers",

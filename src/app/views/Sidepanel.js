@@ -1,9 +1,9 @@
 import React from "react";
-import { ViewWrapper } from "airr-react";
+import { View } from "airr-react";
 
 export const viewName = "sidepanel";
 
-export default class Sidepanel extends ViewWrapper {
+export default class Sidepanel extends View {
     content() {
         return (
                 <div className="wrap col sidepanel-view">

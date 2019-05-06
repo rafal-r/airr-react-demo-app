@@ -1,7 +1,7 @@
-import { SceneWrapper } from "airr-react";
+import { Scene } from "airr-react";
 import MainScene, { viewName as MainSceneViewName } from "./MainScene.js";
 
-export default class Viewport extends SceneWrapper {
+export default class Viewport extends Scene {
     constructor(props) {
         super(props);
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { ViewWrapper } from "airr-react";
+import { View } from "airr-react";
 import Standard from "./Scene/Standard";
 import Menu from "../ui/Menu";
 
@@ -7,7 +7,7 @@ import "./css/Scene.css";
 
 export const viewName = "scene";
 
-export default class Scene extends ViewWrapper {
+export default class Scene extends View {
     sceneOptions = [
         {
             name: "Standard",
@@ -15,7 +15,7 @@ export default class Scene extends ViewWrapper {
                 type: Standard,
                 props: {
                     name: "Standard",
-                    title: "SceneWrapper"
+                    title: "Scene"
                 }
             }
         }

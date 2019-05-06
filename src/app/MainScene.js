@@ -1,5 +1,5 @@
 import React from "react";
-import { Sidepanel, SceneWrapper } from "airr-react";
+import { Sidepanel, Scene } from "airr-react";
 import Welcome, { viewName as WelcomeViewName } from "./views/Welcome.js";
 import MayersView, { viewName as MayersViewName } from "./views/Mayers.js";
 import SidepanelView, {
@@ -14,7 +14,7 @@ export const viewName = "main-scene";
 const sidepanelSide = "left";
 const sidepanelSizeFactor = 0.66;
 
-export default class MainScene extends SceneWrapper {
+export default class MainScene extends Scene {
     constructor(props) {
         super(props);
 

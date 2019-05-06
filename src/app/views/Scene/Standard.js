@@ -1,11 +1,11 @@
-import { SceneWrapper } from "airr-react";
+import { Scene } from "airr-react";
 import Slide, {
     viewNameTpl as SlideViewNameTpl,
     getNextSlideViewName
 } from "./Slide";
 import update from "immutability-helper";
 
-class Standard extends SceneWrapper {
+class Standard extends Scene {
     constructor(props) {
         super(props);
 

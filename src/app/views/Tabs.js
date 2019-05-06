@@ -1,12 +1,12 @@
 import React from "react";
-import { ViewWrapper } from "airr-react";
+import { View } from "airr-react";
 import Standard from "./Tabs/Standard";
 import Menu from "../ui/Menu";
 import "./css/Scene.css";
 
 export const viewName = "tabs";
 
-export default class Tabs extends ViewWrapper {
+export default class Tabs extends View {
     constructor(props) {
         super(props);
 

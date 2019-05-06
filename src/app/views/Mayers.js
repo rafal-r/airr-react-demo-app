@@ -1,9 +1,9 @@
 import React from "react";
-import { ViewWrapper } from "airr-react";
+import { View } from "airr-react";
 
 export const viewName = "mayers";
 
-export default class Mayers extends ViewWrapper {
+export default class Mayers extends View {
     constructor(props) {
         super(props);
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { ViewWrapper } from "airr-react";
+import { View } from "airr-react";
 
 export const viewNameTpl = "slide-view-*";
 
@@ -7,7 +7,7 @@ export const getNextSlideViewName = views => {
     return viewNameTpl.replace("*", views.length + 1);
 };
 
-class Slide extends ViewWrapper {
+class Slide extends View {
     content() {
         return (
             <div className="wrap col scene-slide">

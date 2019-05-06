@@ -1,8 +1,8 @@
 import React from "react";
-import { SceneWrapper, ViewWrapper } from "airr-react";
+import { Scene, View } from "airr-react";
 import "../css/Tabs.css";
 
-class Tab1 extends ViewWrapper {
+class Tab1 extends View {
     content() {
         return (
             <div className="wrap col tab">
@@ -19,7 +19,7 @@ class Tab1 extends ViewWrapper {
         );
     }
 }
-class Tab2 extends ViewWrapper {
+class Tab2 extends View {
     content() {
         return (
             <div className="wrap col tab">
@@ -34,7 +34,7 @@ class Tab2 extends ViewWrapper {
         );
     }
 }
-class Tab3 extends ViewWrapper {
+class Tab3 extends View {
     content() {
         return (
             <div className="wrap col tab">
@@ -49,7 +49,7 @@ class Tab3 extends ViewWrapper {
         );
     }
 }
-class Tab4 extends ViewWrapper {
+class Tab4 extends View {
     content() {
         return (
             <div className="wrap col tab">
@@ -66,7 +66,7 @@ class Tab4 extends ViewWrapper {
     }
 }
 
-export default class Standard extends SceneWrapper {
+export default class Standard extends Scene {
     constructor(props) {
         super(props);
 
