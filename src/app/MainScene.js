@@ -117,7 +117,7 @@ export default class MainScene extends Scene {
             leaveTo: cfg.leaveTo,
             buttons: [
                 {
-                    content: "Ok",
+                    children: "Ok",
                     handler: () => this.closeMayer("demo-mayer")
                 }
             ]
