@@ -30,9 +30,9 @@ export default class MainScene extends Scene {
             sidepanel: {
                 type: Sidepanel,
                 props: {
+                    enabled: true,
                     side: sidepanelSide,
                     sizeFactor: sidepanelSizeFactor,
-                    isShown: false,
                     children: this.getSidepanelContent(WelcomeViewName)
                 }
             }
