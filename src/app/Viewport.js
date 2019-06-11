@@ -10,16 +10,13 @@ export default class Viewport extends Scene {
             activeViewName: MainSceneViewName,
             name: "viewport",
             animation: "overlay",
-            active: true,
             views: [
                 {
                     type: MainScene,
                     props: {
                         name: MainSceneViewName,
                         handleViewportScenePush: this.handleViewportScenePush,
-                        handleViewportViewPop: this
-                            .handleViewportViewPop,
-                        avaibleHeight: window.innerHeight
+                        handleViewportViewPop: this.handleViewportViewPop
                     }
                 }
             ],
