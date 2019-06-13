@@ -170,10 +170,9 @@ export default class MainScene extends Scene {
             content: content,
             appearFrom: "top",
             leaveTo: "bottom",
-            avaibleHeight: this.props.avaibleHeight,
             buttons: [
                 {
-                    content: "Ok",
+                    children: "Ok",
                     handler: () => this.closeMayer("scene-view-mayer")
                 }
             ]
@@ -277,7 +276,7 @@ export default class MainScene extends Scene {
                     <div>
                         <p>
                             This is entry point of airr-react demo. Explore
-                            avaible components and check code for further
+                            available components and check code for further
                             reference.
                         </p>
                     </div>

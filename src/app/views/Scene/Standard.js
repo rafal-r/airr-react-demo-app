@@ -39,6 +39,7 @@ class Standard extends Scene {
     }
 
     componentDidMount() {
+        super.componentDidMount();
         console.log("Scene component did mount");
     }
 
@@ -46,7 +47,7 @@ class Standard extends Scene {
         console.log("Scene component unmounted");
     }
 
-    handleAnimationChange(e) {
+    handleAnimationChange = e => {
         const val = e.target.dataset.value;
         this.setState({ animation: val });
         const newviewsdefinition = this.state.views.map(item => {
@@ -54,19 +55,19 @@ class Standard extends Scene {
         });
 
         this.setState({ views: newviewsdefinition });
-    }
+    };
 
-    handleNextClick(e) {
+    handleNextClick = e => {
         this.changeView(SlideViewNameTpl, {
             viewNumber: this.state.views.length + 1,
             isFirst: false,
             animation: this.state.animation
         });
-    }
+    };
 
-    handlePrevClick(e) {
+    handlePrevClick = e => {
         this.popView();
-    }
+    };
 
     viewsConfig = {
         [SlideViewNameTpl]: {
@@ -77,9 +78,9 @@ class Standard extends Scene {
                 viewNumber: null,
                 animation: null,
                 isFirst: true,
-                handleNextClick: e => this.handleNextClick(e),
-                handlePrevClick: e => this.handlePrevClick(e),
-                handleAnimationChange: e => this.handleAnimationChange(e)
+                handleNextClick: this.handleNextClick,
+                handlePrevClick: this.handlePrevClick,
+                handleAnimationChange: this.handleAnimationChange
             },
             sceneState: {
                 //to change scene state when needed (eg. when activated)
